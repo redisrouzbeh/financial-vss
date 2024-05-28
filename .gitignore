@@ -2,5 +2,4 @@
 .venv/
 venv/
 .DS_Store
-*.json
 repo/
