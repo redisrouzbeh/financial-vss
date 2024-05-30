@@ -1,6 +1,5 @@
 import yaml
 
-
 def create_langchain_schemas_from_redis_schema(redis_yschema):
     with open(redis_yschema, "r") as yschema:
         schema = yaml.load(yschema, Loader=yaml.Loader)

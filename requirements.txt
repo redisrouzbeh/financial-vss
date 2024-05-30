@@ -8,3 +8,8 @@ pandas
 pdf2image
 redisvl>=0.1.0
 spacy
+langgraph
+langchainhub
+langchain-openai
+redis
+redisvl

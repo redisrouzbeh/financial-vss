@@ -6,6 +6,7 @@ import numpy as np
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import UnstructuredFileLoader
 from unstructured.partition.pdf import partition_pdf
+import nltk
 
 
 warnings.filterwarnings("ignore")
@@ -43,8 +44,6 @@ def get_sec_data():
 
     print(f" ✅ Loaded doc info for  {len(sec_data.keys())} tickers...")
     return sec_data
-
-
 
 
 def load_json_metadata(path):
