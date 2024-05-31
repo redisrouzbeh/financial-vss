@@ -77,40 +77,45 @@ def load_json_metadata(path):
     return obj
 
 
+def get_chunks(file_name, chunk_size=2500, chunk_overlap=0):
+    if not os.path.isfile(file_name):
+        print(f"Error: File {file_name} does not exist- no chunks extracted")
+        return []
+
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    try:
+        loader = UnstructuredFileLoader(
+            file_name, mode="single", strategy="fast"
+        )
+        chunks = loader.load_and_split(text_splitter)
+        return chunks
+    except Exception as e:
+        print(f"Error chunking {file_name} skipping")
+        return []
+
+import uuid
+def add_embeddings_for_chunks(chunks_to_process, shared_obj_to_load, doc_type, embeddings):
+    chunk_objs_to_load = []
+    for i, chunk in enumerate(chunks_to_process):
+        obj_to_load = shared_obj_to_load.copy()
+        content = str(chunk.page_content)
+        source_doc_full_path = str(chunk.metadata['source'])
+        source_doc = str(source_doc_full_path).split("/")[len(str(source_doc_full_path).split("/")) - 1]
+        obj_to_load['chunk_id'] = f"{source_doc}-{str(uuid.uuid4())}"
+        obj_to_load['source_doc'] = f"{source_doc}"
+        obj_to_load['content'] = content
+        obj_to_load['doc_type'] = doc_type
+        emb = embeddings.embed_query(content)
+        obj_to_load['text_embedding'] = np.array(emb).astype(np.float32).tobytes()
+        chunk_objs_to_load.append(obj_to_load)
+    return chunk_objs_to_load
+
+
 def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
-    def get_chunks(file_name, chunk_size=2500, chunk_overlap=0):
-        if not os.path.isfile(filing_file):
-            return []
-
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-        try:
-            loader = UnstructuredFileLoader(
-                file_name, mode="single", strategy="fast"
-            )
-            chunks = loader.load_and_split(text_splitter)
-            return chunks
-        except Exception as e:
-            print(f"Error chunking {file_name} skipping")
-            return []
-
-    def add_embeddings_for_chunks(chunks, obj_to_load, doc_type):
-        chunk_objs_to_load = []
-        for i, chunk in enumerate(chunks):
-            content = str(chunk.page_content)
-            source_doc_full_path = str(chunk.metadata['source'])
-            source_doc = str(source_doc_full_path).split("/")[len(str(source_doc_full_path).split("/")) - 1]
-            obj_to_load['chunk_id'] = f"{source_doc}-{i}"
-            obj_to_load['source_doc'] = f"{source_doc}"
-            obj_to_load['content'] = content
-            obj_to_load['doc_type'] = doc_type
-            emb = embeddings.embed_query(content)
-            obj_to_load['text_embedding'] = np.array(emb).astype(np.float32).tobytes()
-            chunk_objs_to_load.append(obj_to_load)
-        return chunk_objs_to_load
-
     total_chunks_count = 0
     total_10K_count = 0
     total_earning_calls_count = 0
+    total_keys = []
     if tickers is None:
         tickers = list(data_dict.keys())
 
@@ -120,22 +125,29 @@ def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
 
         for filing_file in data_dict[ticker]["10K_files"]:
             filing_file_filename = str(filing_file).split("/")[len(str(filing_file).split("/")) - 1]
-            chunks = get_chunks(filing_file)
+            fchunks = get_chunks(filing_file)
             doc_type = '10K'
-            filing_chunk_objs_to_load = add_embeddings_for_chunks(chunks, shared_metadata.copy(), doc_type=doc_type)
+            filing_chunk_objs_to_load = add_embeddings_for_chunks(fchunks, shared_metadata.copy(), doc_type=doc_type,
+                                                                  embeddings=embeddings)
             keys = index.load(filing_chunk_objs_to_load, id_field="chunk_id")
+            total_keys = total_keys + keys
             print(f"✅ Loaded {len(keys)} {doc_type} chunks for ticker={ticker} from {filing_file_filename}")
             total_chunks_count = total_chunks_count + len(keys)
             total_10K_count = total_10K_count + 1
 
         for earning_file in data_dict[ticker]["transcript_files"]:
             earning_file_filename = str(earning_file).split("/")[len(str(earning_file).split("/")) - 1]
-            chunks = get_chunks(earning_file)
+            echunks = get_chunks(earning_file)
             doc_type = 'earning_call'
-            earning_chunk_objs_to_load = add_embeddings_for_chunks(chunks, shared_metadata.copy(), doc_type=doc_type)
+            earning_chunk_objs_to_load = add_embeddings_for_chunks(echunks,
+                                                                   shared_metadata.copy(),
+                                                                   doc_type=doc_type,
+                                                                   embeddings=embeddings)
             keys = index.load(earning_chunk_objs_to_load, id_field="chunk_id")
+            total_keys = total_keys + keys
             print(f"✅ Loaded {len(keys)} {doc_type} chunks for ticker={ticker} from {earning_file_filename}")
             total_chunks_count = total_chunks_count + len(keys)
             total_earning_calls_count = total_earning_calls_count + 1
 
-    print(f"✅✅✅Loaded a total of {total_chunks_count} chunks from {total_10K_count} 10Ks and {total_earning_calls_count} earning calls for {len(tickers)} tickers.")
+    print(
+        f"✅✅✅Loaded a total of {total_chunks_count} chunks from {total_10K_count} 10Ks and {total_earning_calls_count} earning calls for {len(tickers)} tickers.")
