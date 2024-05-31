@@ -13,3 +13,4 @@ langchainhub
 langchain-openai
 redis
 redisvl
+langchain-experimental
