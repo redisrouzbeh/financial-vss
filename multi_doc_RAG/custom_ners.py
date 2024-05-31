@@ -2,7 +2,7 @@ from spacy.lang.en import English
 from ingestion import load_json_metadata
 from ingestion import get_sec_data
 
-
+# a simple toy rule-based NER to just demonstrate the use-case
 def build_custom_sec_ner():
     sec_data = get_sec_data()
     patterns = []
@@ -12,9 +12,7 @@ def build_custom_sec_ner():
         ent_parts = str(ent).strip().split(" ")
         for part in ent_parts:
             pattern_list.append({"LOWER": str(part).lower()})
-        result = pattern_list
-        print(result)
-        return result
+        return pattern_list
 
     for ticker in list(sec_data.keys()):
         if len(sec_data[ticker]["metadata_file"]) > 0:
@@ -42,7 +40,7 @@ def get_entities(query):
         })
     return entities
 
-
+# Simple OR based query translation based on rudimentary NLP pre-processing
 def get_redis_filters(query):
     filters = []
     for ent in get_entities(query):
