@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "sales data for Xs and Xs Max, there's not obvious evidence of that in the data as I see it.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2018-Nov-01-AAPL.txt"}, "type": "Document"}}

@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "How should we think about the Fresh rollout and the impact over the long-term? Thank you.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2016-Apr-28-AMZN.txt"}, "type": "Document"}}

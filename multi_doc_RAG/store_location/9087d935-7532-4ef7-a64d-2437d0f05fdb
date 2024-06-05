@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "year-over-year because it's easy to talk about great things and not show the details of things that aren't so great.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2018-Nov-01-AAPL.txt"}, "type": "Document"}}

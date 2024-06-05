@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "where we're at. <Sync id=\"L404\"time=\"00:55:40\"/>And I'm hopeful that that's where we're headed.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2019-Oct-30-AAPL.txt"}, "type": "Document"}}

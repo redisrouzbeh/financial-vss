@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "(58)\n\n(19)\n\n(540)\n\nTotal other income (expense), net\n\n2,371\n\n14,633\n\n(16,806)\n\n44\n\nTable of Contents", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2023-10K.pdf"}, "type": "Document"}}

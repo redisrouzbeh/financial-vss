@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "In November 2021, Jawbone Innovations, LLC filed a complaint against Amazon.com, Inc. and Amazon.com Services, Inc. in", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2022-10K.pdf"}, "type": "Document"}}

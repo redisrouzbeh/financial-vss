@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "the tailwinds start to overpower those headwinds in the next couple of quarters and see gross margins drift higher?", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2018-Jul-31-AAPL.txt"}, "type": "Document"}}

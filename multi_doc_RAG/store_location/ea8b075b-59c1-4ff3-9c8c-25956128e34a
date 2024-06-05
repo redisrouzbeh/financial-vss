@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "been edited to ensure the entire transcription represents a verbatim report of the call.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2018-Jul-26-AMZN.txt"}, "type": "Document"}}

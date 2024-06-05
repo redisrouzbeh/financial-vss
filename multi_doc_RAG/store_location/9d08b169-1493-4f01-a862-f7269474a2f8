@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "relative to 2018. And we've reflected what we've seen so far in Q1 in our guidance.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2019-Jan-31-AMZN.txt"}, "type": "Document"}}

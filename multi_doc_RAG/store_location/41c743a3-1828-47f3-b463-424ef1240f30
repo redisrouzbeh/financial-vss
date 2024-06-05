@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "1,913 1,872 1,758 1,430 1,177 5,986 14,136 (1,725) 12,411\n\nNote 7 \u2013 Debt\n\nCommercial Paper and Repurchase Agreements", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}

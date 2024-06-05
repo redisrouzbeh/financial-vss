@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "id=\"L363\"time=\"00:52:36\"/>They just know that now is not the time to do that.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2020-Apr-30-AAPL.txt"}, "type": "Document"}}

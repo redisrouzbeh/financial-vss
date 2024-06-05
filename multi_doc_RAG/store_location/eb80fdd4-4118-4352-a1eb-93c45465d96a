@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "we seem to be fairly substantially off there, and we're working very hard to put in additional capacity.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2020-Jan-28-AAPL.txt"}, "type": "Document"}}

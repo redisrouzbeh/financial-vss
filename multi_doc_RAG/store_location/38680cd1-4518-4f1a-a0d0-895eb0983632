@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Apple Inc. | 2021 Form 10-K | 46\n\n2019\n\n19,019,943 (1,380,819) 133,821 17,772,945\n\nEmployee Stock Purchase Plan", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

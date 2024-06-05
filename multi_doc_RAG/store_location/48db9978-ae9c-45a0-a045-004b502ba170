@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "measure, \u201cNet cash provided by (used in) operating activities,\u201d for 2020 and 2021 (in millions):", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2022-10K.pdf"}, "type": "Document"}}

@@ -111,11 +111,13 @@ def add_embeddings_for_chunks(chunks_to_process, shared_obj_to_load, doc_type, e
     return chunk_objs_to_load
 
 
-def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
+def redis_bulk_upload(data_dict, index, embeddings, chunk_size=2500, tickers=None):
     total_chunks_count = 0
     total_10K_count = 0
     total_earning_calls_count = 0
     total_keys = []
+    all_chunks = []
+
     if tickers is None:
         tickers = list(data_dict.keys())
 
@@ -125,7 +127,8 @@ def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
 
         for filing_file in data_dict[ticker]["10K_files"]:
             filing_file_filename = str(filing_file).split("/")[len(str(filing_file).split("/")) - 1]
-            fchunks = get_chunks(filing_file)
+            fchunks = get_chunks(filing_file, chunk_size=chunk_size)
+            all_chunks.append(fchunks)
             doc_type = '10K'
             filing_chunk_objs_to_load = add_embeddings_for_chunks(fchunks, shared_metadata.copy(), doc_type=doc_type,
                                                                   embeddings=embeddings)
@@ -137,7 +140,8 @@ def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
 
         for earning_file in data_dict[ticker]["transcript_files"]:
             earning_file_filename = str(earning_file).split("/")[len(str(earning_file).split("/")) - 1]
-            echunks = get_chunks(earning_file)
+            echunks = get_chunks(earning_file, chunk_size=chunk_size)
+            all_chunks.append(echunks)
             doc_type = 'earning_call'
             earning_chunk_objs_to_load = add_embeddings_for_chunks(echunks,
                                                                    shared_metadata.copy(),
@@ -151,3 +155,5 @@ def redis_bulk_upload(data_dict, index, embeddings, tickers=None):
 
     print(
         f"✅✅✅Loaded a total of {total_chunks_count} chunks from {total_10K_count} 10Ks and {total_earning_calls_count} earning calls for {len(tickers)} tickers.")
+
+    return all_chunks

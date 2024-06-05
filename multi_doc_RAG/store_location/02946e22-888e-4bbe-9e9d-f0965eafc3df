@@ -1,0 +1,1 @@
+{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "activity, maybe a combination of both? Would just be interested in your thoughts on that.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2018-Feb-01-AMZN.txt"}, "type": "Document"}}
