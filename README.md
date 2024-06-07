@@ -21,3 +21,17 @@
 # ⚡ Introduction to Vector Search in Redis
 [Redis](https://redis.com), widely recognized for its low-latency performance, extends beyond traditional noSQL databases. It's uniquely suited for tasks like caching, session management, job queuing, and JSON storage. With enhanced Search+Query features, Redis emerges as a performant [Vector Database](https://redis.com/solutions/use-cases/vector-database) supporting Vector Search over unstructured data encoded as embeddings.
 
+### Installation
+
+#### Local LLM
+All the notebooks here runs on local LLMs served by Ollama, and we specifically use `llama3` model in all of our examples. 
+So make sure you install Ollama and pull `llama3` model on your local machine where you run these notebooks.
+
+(1) Download [Ollama app](https://ollama.ai/) and install.
+(2) run `ollama pull llama3`
+
+
+
+
+
+
