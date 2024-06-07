@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "In March 2022, the Board of Directors authorized a program to repurchase up to $10.0 billion of our common stock, with no", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2023-10K.pdf"}, "type": "Document"}}

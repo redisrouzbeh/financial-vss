@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "maintained for the Company\u2019s products, customers may choose not to buy the Company\u2019s products.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

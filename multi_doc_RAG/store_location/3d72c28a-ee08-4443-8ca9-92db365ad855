@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "content that you get for $4.99, and it's amazing. <Sync id=\"L254\"time=\"00:36:55\"/>It is amazing.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AAPL/2019-Oct-30-AAPL.txt"}, "type": "Document"}}

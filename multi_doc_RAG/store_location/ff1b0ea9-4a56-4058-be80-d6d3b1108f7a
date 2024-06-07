@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Table of Contents\n\nForeign Exchange Risk", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2022-10K.pdf"}, "type": "Document"}}

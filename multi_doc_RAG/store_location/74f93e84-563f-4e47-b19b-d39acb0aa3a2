@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Apple Inc. | 2021 Form 10-K | 16\n\nGeneral Risks\n\nThe price of the Company\u2019s stock is subject to volatility.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "in 21 metro areas in the U.S. as well as London and Tokyo.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2017-Apr-27-AMZN.txt"}, "type": "Document"}}

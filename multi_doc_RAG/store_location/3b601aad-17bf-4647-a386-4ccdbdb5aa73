@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "possible that its gross unrecognized tax benefits could decrease in the next 12 months by as much as $1.2 billion.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

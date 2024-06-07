@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Equity investments in private companies for which we do not have the ability to exercise significant influence are accounted", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2021-10K.pdf"}, "type": "Document"}}

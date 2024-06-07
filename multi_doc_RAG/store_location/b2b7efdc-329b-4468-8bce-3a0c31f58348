@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "that our audits provide a reasonable basis for our opinion.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}

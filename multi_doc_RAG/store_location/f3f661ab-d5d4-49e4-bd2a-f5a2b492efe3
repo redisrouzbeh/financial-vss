@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Beginning in March 2020, a number of class-action complaints were filed alleging, among other things, price fixing", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2021-10K.pdf"}, "type": "Document"}}

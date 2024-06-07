@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "for making judgments about the carrying values of assets and liabilities.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

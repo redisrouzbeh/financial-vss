@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "17,772,945 (917,270) 121,088 16,976,763\n\nNote 9 \u2013 Benefit Plans\n\n2014 Employee Stock Plan", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2021-10K.pdf"}, "type": "Document"}}

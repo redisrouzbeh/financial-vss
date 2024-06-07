@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Company\u2019s leases were $13.9 billion, $14.9 billion and $12.9 billion for 2023, 2022 and 2021, respectively.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2023-10K.pdf"}, "type": "Document"}}

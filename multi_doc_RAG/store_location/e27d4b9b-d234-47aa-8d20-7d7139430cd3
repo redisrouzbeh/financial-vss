@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Our interest income was $832 million and $555 million during 2019 and 2020. We generally invest our excess cash in AAA-", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2021-10K.pdf"}, "type": "Document"}}

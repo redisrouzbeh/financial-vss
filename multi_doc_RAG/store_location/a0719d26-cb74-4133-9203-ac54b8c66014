@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "16,475 $ 816 (1,402) 1,607 (1,838) (181) 15,477 $", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}

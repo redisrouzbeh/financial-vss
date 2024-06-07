@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "We estimate losses on receivables based on expected losses, including our historical experience of actual losses. Receivables", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2021-10K.pdf"}, "type": "Document"}}

@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "some of those experiments that we're doing, but we're seeing good traction on those things and we like that.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2016-Jul-28-AMZN.txt"}, "type": "Document"}}

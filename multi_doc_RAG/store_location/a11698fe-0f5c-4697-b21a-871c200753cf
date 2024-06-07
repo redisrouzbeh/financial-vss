@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "portion.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/earning_calls/AMZN/2018-Apr-26-AMZN.txt"}, "type": "Document"}}

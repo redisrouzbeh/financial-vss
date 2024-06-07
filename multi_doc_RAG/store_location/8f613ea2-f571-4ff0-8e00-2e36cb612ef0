@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Note 9 \u2013 Benefit Plans\n\n2022 Employee Stock Plan", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}

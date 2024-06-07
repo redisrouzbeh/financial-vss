@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Apple Inc. | 2023 Form 10-K | 3\n\nBusiness Seasonality and Product Introductions", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2023-10K.pdf"}, "type": "Document"}}

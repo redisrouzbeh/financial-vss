@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "137,781 28,622 23,724 30,620 53,768 274,515\n\nSegment Operating Performance", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}

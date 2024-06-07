@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "The Company is exposed to credit risk and \ufb02uctuations in the values of its investment portfolio.", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2023-10K.pdf"}, "type": "Document"}}

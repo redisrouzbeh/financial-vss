@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Long-lived assets, other than goodwill and indefinite-lived intangible assets, are reviewed for impairment whenever events or", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AMZN/AMZN-2023-10K.pdf"}, "type": "Document"}}

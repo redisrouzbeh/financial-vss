@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"page_content": "Total proceeds from/(repayments of) commercial paper, net\n\n$\n\n3,955 $\n\n1,022 $\n\n(963)", "metadata": {"source": "/Users/robert.shelton/Documents/boa/financial-vss/resources/filings/AAPL/AAPL-2022-10K.pdf"}, "type": "Document"}}
